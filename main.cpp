@@ -85,72 +85,53 @@ int main()
         cout << "\n EMERGENCY RESPONSE SYSTEM";
         cout << "\n==================================";
 
-        cout << "\n1. Fire Emergency";
-        cout << "\n2. Medical Emergency";
-        cout << "\n3. Crime Emergency";
-        cout << "\n4. Exit";
+        cout << "\n1. Report Emergency";
+        cout << "\n2. Exit";
 
         cout << "\n\nEnter Choice: ";
         cin >> choice;
 
-        Caller caller(
-            "Ahmed",
-            "03001234567"
-        );
-
-        EmergencyCall call;
+        cin.ignore();
 
         switch(choice)
         {
             case 1:
+            {
+                string description;
 
-                call =
-                    EmergencyCall(
-                        1,
-                        caller,
-                        "Critical fire and explosion in warehouse",
-                        Location(18,18)
-                    );
+                float x, y;
 
-                center.receiveEmergencyCall(
-                    call
+                cout << "\nEnter Emergency Description: ";
+                getline(cin, description);
+
+                cout << "Enter Incident X Coordinate: ";
+                cin >> x;
+
+                cout << "Enter Incident Y Coordinate: ";
+                cin >> y;
+
+                cin.ignore();
+
+                Caller caller(
+                    "Ahmed",
+                    "03001234567"
                 );
 
+                static int callID = 1;
+
+                EmergencyCall call(
+                    callID++,
+                    caller,
+                    description,
+                    Location(x, y)
+                );
+
+                center.receiveEmergencyCall(call);
+
                 break;
+            }
 
             case 2:
-
-                call =
-                    EmergencyCall(
-                        2,
-                        caller,
-                        "Person unconscious and dying",
-                        Location(12,12)
-                    );
-
-                center.receiveEmergencyCall(
-                    call
-                );
-
-                break;
-
-            case 3:
-
-                call =
-                    EmergencyCall(
-                        3,
-                        caller,
-                        "Armed robbery and gun attack",
-                        Location(25,25)
-                    );
-
-                center.receiveEmergencyCall(
-                    call
-                );
-
-                break;
-
-            case 4:
 
                 cout
                     << "\nSystem Shutdown."
@@ -165,7 +146,7 @@ int main()
                     << endl;
         }
 
-    } while(choice != 4);
+    } while(choice != 2);1
 
     return 0;
 }
