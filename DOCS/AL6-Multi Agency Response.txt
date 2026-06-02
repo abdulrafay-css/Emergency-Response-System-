@@ -1,0 +1,6 @@
+IF incident severity == CRITICAL:
+
+    dispatch:
+        ambulance
+        police
+        firetruck

@@ -1,0 +1,13 @@
+START
+
+Receive caller information
+
+Receive emergency description
+
+Receive incident location
+
+Create EmergencyCall object
+
+Send EmergencyCall to IncidentAnalyzer
+
+END

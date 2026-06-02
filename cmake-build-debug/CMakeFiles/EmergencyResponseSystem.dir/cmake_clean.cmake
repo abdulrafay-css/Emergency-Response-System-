@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/EmergencyResponseSystem.dir/main.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/main.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Ambulance.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Ambulance.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/AnalyticsEngine.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/AnalyticsEngine.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Caller.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Caller.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/ControlCenter.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/ControlCenter.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/DispatchEngine.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/DispatchEngine.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/EmergencyCall.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/EmergencyCall.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/FireTruck.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/FireTruck.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Incident.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Incident.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/IncidentAnalyzer.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/IncidentAnalyzer.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Location.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Location.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Logger.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Logger.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/NearestUnitStrategy.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/NearestUnitStrategy.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/PoliceUnit.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/PoliceUnit.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Responder.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Responder.cpp.obj.d"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Zone.cpp.obj"
+  "CMakeFiles/EmergencyResponseSystem.dir/src/Zone.cpp.obj.d"
+  "EmergencyResponseSystem.exe"
+  "EmergencyResponseSystem.exe.manifest"
+  "EmergencyResponseSystem.pdb"
+  "libEmergencyResponseSystem.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/EmergencyResponseSystem.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

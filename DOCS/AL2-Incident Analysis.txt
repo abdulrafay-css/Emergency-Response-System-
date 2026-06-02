@@ -1,0 +1,37 @@
+INPUT:
+    EmergencyCall
+
+PROCESS:
+
+Read description
+
+IF description contains:
+    "fire"
+        type = FIRE
+
+ELSE IF description contains:
+    "robbery"
+        type = CRIME
+
+ELSE
+        type = MEDICAL
+
+Determine severity:
+    IF keywords:
+        "critical"
+        "dying"
+        "explosion"
+
+            severity = CRITICAL
+
+    ELSE IF:
+        "serious"
+
+            severity = HIGH
+
+    ELSE
+            severity = MEDIUM
+
+Create Incident object
+
+RETURN Incident

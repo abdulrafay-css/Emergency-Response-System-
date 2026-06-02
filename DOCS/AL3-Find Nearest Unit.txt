@@ -1,0 +1,21 @@
+INPUT:
+    Incident
+    List of responders
+
+PROCESS:
+
+minimumDistance = infinity
+
+FOR each responder:
+
+    IF responder available:
+
+        calculate distance
+
+        IF distance < minimumDistance:
+
+            minimumDistance = distance
+
+            selectedResponder = responder
+
+RETURN selectedResponder

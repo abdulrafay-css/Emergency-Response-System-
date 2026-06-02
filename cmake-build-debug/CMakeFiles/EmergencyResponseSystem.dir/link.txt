@@ -1,0 +1,3 @@
+C:\Users\flami\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\EmergencyResponseSystem.dir/objects.a
+C:\Users\flami\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\EmergencyResponseSystem.dir/objects.a @CMakeFiles\EmergencyResponseSystem.dir\objects1.rsp
+C:\Users\flami\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\EmergencyResponseSystem.dir/objects.a -Wl,--no-whole-archive -o EmergencyResponseSystem.exe -Wl,--out-implib,libEmergencyResponseSystem.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\EmergencyResponseSystem.dir\linkLibs.rsp

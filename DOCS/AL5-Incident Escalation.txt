@@ -1,0 +1,7 @@
+IF response delay > threshold:
+
+    severity increases
+
+    request backup responder
+
+    notify control center

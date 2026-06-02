@@ -1,0 +1,19 @@
+INPUT:
+    Incident
+
+PROCESS:
+
+Find matching responder type
+
+Select nearest responder
+
+Mark responder BUSY
+
+Calculate ETA
+
+Log dispatch
+
+Send responder
+
+OUTPUT:
+    Successful dispatch
